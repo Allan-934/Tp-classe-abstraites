@@ -1,16 +1,31 @@
 abstract class Appareil
 {
-    private protected string marque {get; set;}
-    private protected string modele {get; set;}
-    private protected DateTime dateFabrication {get; set;}
-    
-    // Constructeur pour initialiser les propriétés de l'appareil
+    protected string marque = string.Empty;
+    protected string modele = string.Empty;
+    protected DateTime dateFabrication;
+
+    // 2. Le constructeur
     public Appareil(string marque, string modele, DateTime dateFabrication)
     {
-        this.marque = marque;
-        this.modele = modele;
+        // On utilise les méthodes Set pour initialiser (ou les champs directement)
+        this.SetMarque(marque);
+        this.SetModele(modele);
         this.dateFabrication = dateFabrication;
     }
+
+    // 3. Les Getters et Setters classiques (méthodes)
+    
+    // Pour la Marque
+    public string GetMarque() { return this.marque; }
+    public void SetMarque(string valeur) { this.marque = valeur; }
+
+    // Pour le Modèle
+    public string GetModele() { return this.modele; }
+    public void SetModele(string valeur) { this.modele = valeur; }
+
+    // Pour la Date
+    public DateTime GetDateFabrication() { return this.dateFabrication; }
+    public void SetDateFabrication(DateTime valeur) { this.dateFabrication = valeur; }
 
     // Méthode classique pour allumer l'appareil
     public void Allumer() 
