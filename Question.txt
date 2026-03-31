@@ -1,0 +1,3 @@
+1. Par ce que on va instancier différents appareils 
+2. Non, on nje peut pas instancier une classe abstraite, on doit l'utiliser purinstancier les classes filles 
+3. Une méthode virtual est tu méthode qui es dejà définie dans la classe mère et elle permet aux classes filles de l'utiliser tel quel ou de la modifier. Une méthode abstract est une méthode qui est obligatoirement défiini dans les classes filles .
