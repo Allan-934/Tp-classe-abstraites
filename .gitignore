@@ -1,0 +1,96 @@
+# Build output
+bin/
+obj/
+
+# VS temporary files
+.vs/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider files
+.idea/
+*.sln.iml
+
+# NuGet packages
+*.nupkg
+# The packages folder can be ignored because of Package Restore
+**/packages/*
+
+# Visual Studio cache files
+*.cache
+*.dbmdl
+*.pdb
+
+# ASP.NET temporary files
+_ReSharper*/
+
+# [Optional] Visual Studio profiler
+*.psess
+*.vsp
+*.vspx
+*.sap
+
+# Publish output
+publish/
+
+# Backup files
+*~
+*.bak
+*.orig
+
+# Local history for some editors
+.history/
+
+# Mac files
+.DS_Store
+
+# Windows Thumbs.db
+Thumbs.db
+
+# dotCover
+*.dotCover
+
+# Rider
+.idea
+
+# NUnit
+*.VisualState.xml
+TestResult.xml
+
+# JetBrains Rider
+.idea/
+
+# Mono
+*.pidb
+
+# Packages
+*.nupkg
+
+# Entity Framework
+*.edmx.sql
+*.dbmdl
+
+# Rider
+.idea/
+
+# Visual Studio Code
+.vscode/
+.history/
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Others
+*.vsix
+
+# Ignore generated files from IDEs
+*.erged.cs
+
+# OneDrive lock files 
+~$*
