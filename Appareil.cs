@@ -31,4 +31,4 @@ abstract class Appareil
     public abstract void AfficherInfos();
     // Méthode abstraite pour calculer l'ancienneté de l'appareil, doit être Instancié par les classes filles
     public abstract void CalculerAnciennete();
-}
+}  
