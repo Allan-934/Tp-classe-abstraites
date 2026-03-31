@@ -1,11 +1,9 @@
 abstract class Appareil
 {
-    private string marque { get; set; }
-    private string modele { get; set; }
-    private DateTime dateFabrication { get; set; }
+    private protected string marque {get; set;}
+    private protected string modele {get; set;}
+    private protected DateTime dateFabrication {get; set;}
     
-    // Constructeur par défaut
-    public Appareil() { }
     // Constructeur pour initialiser les propriétés de l'appareil
     public Appareil(string marque, string modele, DateTime dateFabrication)
     {
@@ -33,6 +31,4 @@ abstract class Appareil
     public abstract void AfficherInfos();
     // Méthode abstraite pour calculer l'ancienneté de l'appareil, doit être Instancié par les classes filles
     public abstract void CalculerAnciennete();
-
-
 }
