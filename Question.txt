@@ -4,3 +4,6 @@
 4. Cette méthode permet d'afficher les attributs de l'objet unique avec son  nom,  ssna scette méthode le programme afficherais le nom  de la calsse 
 5. La version  de la classe mère, la classe Appareil 
 6. Le type DateTime 
+7. Parce qu’`Ordinateur` et `Smartphone` héritent de `Appareil`. En programmation orientée objet, on peut utiliser le type parent (`Appareil`) pour référencer n’importe quelle instance de ses classes dérivées (polymorphisme), donc une `List<Appareil>` accepte ces objets.
+8.Un dictionnaire (comme `Dictionary<TKey, TValue>` en C#) sert à stocker des paires clé-valeur, permettant un accès rapide et efficace aux valeurs via leur clé unique (recherche en O(1)), utile pour des données indexées comme un annuaire ou un cache.
+9. Le try...catch permet de gérer les exceptions (erreurs inattendues) qui peuvent survenir dans le bloc try. Si une exception est levée, le bloc catch l'intercepte, évitant un crash du programme et permettant une gestion appropriée (par ex. afficher un message d'erreur ou effectuer une action corrective).
