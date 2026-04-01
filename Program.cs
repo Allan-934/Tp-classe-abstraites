@@ -28,5 +28,19 @@ class Program
         // Exercice 4 Creation d'un new smartphone avec une date diff 
         Smartphone s2 = new Smartphone("Samsung", "Galaxy S20", new DateTime(2020, 2, 11), 4);
         s2.CalculerAnciennete();
+
+        // Exercice 5 : Création d'une liste d'appareils et affichage de leurs informations 
+        List<Appareil> appareils = new List<Appareil>();
+        appareils.Add(o1);
+        appareils.Add(s1);
+
+        foreach (Appareil appareil in appareils)
+        {
+            Console.WriteLine("---");
+            appareil.Allumer();
+            appareil.AfficherType();
+            appareil.AfficherGarantie();
+            appareil.AfficherInfos();
+        }
     }
 }
