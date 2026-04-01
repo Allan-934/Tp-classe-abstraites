@@ -1,4 +1,4 @@
-class Ordinateur : Appareil
+class Ordinateur : Appareil 
 {
     private double tailleEcran { get; set; }
 

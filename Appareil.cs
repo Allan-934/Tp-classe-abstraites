@@ -1,4 +1,4 @@
-abstract class Appareil
+public abstract class Appareil
 {
     protected string marque = string.Empty;
     protected string modele = string.Empty;

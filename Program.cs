@@ -42,5 +42,25 @@ class Program
             appareil.AfficherGarantie();
             appareil.AfficherInfos();
         }
+        // Exercice 6 : Création d'un dictionnaire d'appareils et affichage de leurs informations
+        Dictionary<string, Appareil> dictAppareils = new Dictionary<string, Appareil>();
+        dictAppareils.Add(o1.GetModele(), o1);
+        dictAppareils.Add(s1.GetModele(), s1); 
+
+        // Exercice 7 : Création d'un catalogue d'appareils et test de la recherche
+        CatalogueAppareils catalogue = new CatalogueAppareils();
+
+        Ordinateur ordi2 = new Ordinateur("Lenovo", "ThinkPad", new DateTime(2020, 5, 1), 15.6);
+        Smartphone phone2 = new Smartphone("Samsung", "GalaxyS20", new DateTime(2019, 3, 15), 3);
+
+        catalogue.AjouterAppareil(ordi2);
+        catalogue.AjouterAppareil(phone2);
+
+        // recherche existante
+        catalogue.RechercherAppareil("ThinkPad");
+
+        // recherche inexistante
+        catalogue.RechercherAppareil("InexistantModel");
+
     }
 }
